@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News Bangla - Latest news in Bengali covering national, international, sports, technology, business, health, and entertainment">
+    <meta name="keywords" content="bangla news, bangladesh news, latest news, breaking news">
+    <meta name="author" content="News Bangla">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="News Bangla - Latest Bengali News">
+    <meta property="og:description" content="Stay updated with latest news in Bengali covering all major categories">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Bangla - Latest Bengali News">
+    <meta name="twitter:description" content="Stay updated with latest news in Bengali covering all major categories">
+    
+    <title>News Bangla - Latest Bengali News Portal</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "News Bangla",
+        "url": "https://newsbangla.com",
+        "description": "Latest news in Bengali covering national, international, sports, technology, business, health, and entertainment",
+        "publisher": {
+            "@type": "Organization",
+            "name": "News Bangla",
+            "logo": {
+                "@type": "ImageObject",
+                "url": ""
+            }
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="date-time">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="current-date">Wednesday, September 10, 2025</span>
+                </div>
+                <div class="top-social">
+                    <a href="https://facebook.com/newsbangla" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/newsbangla" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/newsbangla" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1><span class="logo-news">News</span> <span class="logo-bangla">Bangla</span></h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#" class="nav-link">National</a></li>
+                        <li><a href="#" class="nav-link">International</a></li>
+                        <li><a href="#" class="nav-link">Sports</a></li>
+                        <li><a href="#" class="nav-link">Tech</a></li>
+                        <li><a href="#" class="nav-link">Business</a></li>
+                        <li><a href="#" class="nav-link">Health</a></li>
+                        <li><a href="#" class="nav-link">Entertainment</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mobile Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="navMobile">
+            <ul class="mobile-menu">
+                <li><a href="#" class="mobile-nav-link">Home</a></li>
+                <li><a href="#" class="mobile-nav-link">National</a></li>
+                <li><a href="#" class="mobile-nav-link">International</a></li>
+                <li><a href="#" class="mobile-nav-link">Sports</a></li>
+                <li><a href="#" class="mobile-nav-link">Tech</a></li>
+                <li><a href="#" class="mobile-nav-link">Business</a></li>
+                <li><a href="#" class="mobile-nav-link">Health</a></li>
+                <li><a href="#" class="mobile-nav-link">Entertainment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="container">
+            <div class="breaking-news-content">
+                <div class="breaking-label">
+                    <i class="fas fa-bolt"></i>
+                    BREAKING NEWS
+                </div>
+                <div class="ticker-wrapper">
+                    <div class="ticker-content" id="tickerContent">
+                        <span>Major economic policy changes announced by government officials • </span>
+                        <span>Technology sector sees unprecedented growth in AI development • </span>
+                        <span>International summit reaches breakthrough climate agreement • </span>
+                        <span>Healthcare innovations promise better treatment outcomes • </span>
+                        <span>Sports championship breaks all viewership records • </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content Area -->
+                <div class="content-primary">
+                    <!-- Featured Slider -->
+                    <section class="featured-slider" id="featuredSlider">
+                        <div class="slider-container">
+                            <div class="slide active" data-slide="0">
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=400&fit=crop" alt="Breaking: Major Economic Development Announced" loading="eager">
+                                <div class="slide-content">
+                                    <span class="slide-category national">National</span>
+                                    <h2 class="slide-title">Breaking: Major Economic Development Announced</h2>
+                                    <p class="slide-excerpt">Government unveils new economic policies that will impact millions of citizens across the country...</p>
+                                    <div class="slide-meta">
+                                        <span class="slide-author">By John Smith</span>
+                                        <span class="slide-date">Sep 10, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" data-slide="1">
+                                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=400&fit=crop" alt="Technology Giants Announce Revolutionary AI Partnership" loading="lazy">
+                                <div class="slide-content">
+                                    <span class="slide-category tech">Tech</span>
+                                    <h2 class="slide-title">Technology Giants Announce Revolutionary AI Partnership</h2>
+                                    <p class="slide-excerpt">Leading technology companies join forces to develop next-generation artificial intelligence solutions...</p>
+                                    <div class="slide-meta">
+                                        <span class="slide-author">By Sarah Johnson</span>
+                                        <span class="slide-date">Sep 10, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" data-slide="2">
+                                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=400&fit=crop" alt="Sports Championship Finals Draw Record Viewership" loading="lazy">
+                                <div class="slide-content">
+                                    <span class="slide-category sports">Sports</span>
+                                    <h2 class="slide-title">Sports Championship Finals Draw Record Viewership</h2>
+                                    <p class="slide-excerpt">Historic match breaks all previous television and streaming records with millions of viewers worldwide...</p>
+                                    <div class="slide-meta">
+                                        <span class="slide-author">By Mike Wilson</span>
+                                        <span class="slide-date">Sep 09, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-btn next-btn" id="nextBtn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="slider-dots">
+                            <button class="dot active" data-slide="0"></button>
+                            <button class="dot" data-slide="1"></button>
+                            <button class="dot" data-slide="2"></button>
+                        </div>
+                    </section>
+
+                    <!-- News Categories -->
+                    <section class="news-categories">
+                        <div class="category-section">
+                            <div class="category-header">
+                                <h2>Latest News</h2>
+                                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="news-grid">
+                                <article class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop" alt="Healthcare Breakthrough Offers New Hope" loading="lazy">
+                                        <span class="news-category health">Health</span>
+                                    </div>
+                                    <div class="news-content">
+                                        <h3 class="news-title">Healthcare Breakthrough Offers New Hope</h3>
+                                        <p class="news-excerpt">Medical researchers announce significant advancement in treatment options for chronic conditions...</p>
+                                        <div class="news-meta">
+                                            <span class="news-author">By Dr. Emily Chen</span>
+                                            <span class="news-date">Sep 09, 2025</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43b4a3?w=400&h=250&fit=crop" alt="International Climate Summit Reaches Historic Agreement" loading="lazy">
+                                        <span class="news-category international">International</span>
+                                    </div>
+                                    <div class="news-content">
+                                        <h3 class="news-title">International Climate Summit Reaches Historic Agreement</h3>
+                                        <p class="news-excerpt">World leaders unite on comprehensive climate action plan with binding commitments...</p>
+                                        <div class="news-meta">
+                                            <span class="news-author">By David Brown</span>
+                                            <span class="news-date">Sep 08, 2025</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop" alt="Tech Innovation Drives Market Growth" loading="lazy">
+                                        <span class="news-category tech">Tech</span>
+                                    </div>
+                                    <div class="news-content">
+                                        <h3 class="news-title">Tech Innovation Drives Market Growth</h3>
+                                        <p class="news-excerpt">New technological developments are creating unprecedented opportunities in various sectors...</p>
+                                        <div class="news-meta">
+                                            <span class="news-author">By Alex Johnson</span>
+                                            <span class="news-date">Sep 08, 2025</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="news-card">
+                                    <div class="news-image">
+                                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=250&fit=crop" alt="Sports Championship Finals Continue" loading="lazy">
+                                        <span class="news-category sports">Sports</span>
+                                    </div>
+                                    <div class="news-content">
+                                        <h3 class="news-title">Sports Championship Finals Continue</h3>
+                                        <p class="news-excerpt">Exciting matches continue as teams compete for the ultimate championship title...</p>
+                                        <div class="news-meta">
+                                            <span class="news-author">By Sports Desk</span>
+                                            <span class="news-date">Sep 07, 2025</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Search Widget -->
+                    <div class="widget search-widget">
+                        <h3 class="widget-title">Search</h3>
+                        <form class="search-form">
+                            <input type="text" placeholder="Search news..." class="search-input">
+                            <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Popular Posts Widget -->
+                    <div class="widget popular-posts-widget">
+                        <h3 class="widget-title">Popular Posts</h3>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=80&h=60&fit=crop" alt="Popular post" loading="lazy">
+                                <div class="popular-post-content">
+                                    <h4>Breaking: Major Economic Development</h4>
+                                    <span class="popular-post-date">Sep 10, 2025</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=80&h=60&fit=crop" alt="Popular post" loading="lazy">
+                                <div class="popular-post-content">
+                                    <h4>AI Partnership Announcement</h4>
+                                    <span class="popular-post-date">Sep 10, 2025</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=80&h=60&fit=crop" alt="Popular post" loading="lazy">
+                                <div class="popular-post-content">
+                                    <h4>Sports Championship Finals</h4>
+                                    <span class="popular-post-date">Sep 09, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="widget categories-widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <div class="categories-list">
+                            <a href="#" class="category-link">National <span class="category-count">(45)</span></a>
+                            <a href="#" class="category-link">International <span class="category-count">(32)</span></a>
+                            <a href="#" class="category-link">Sports <span class="category-count">(28)</span></a>
+                            <a href="#" class="category-link">Tech <span class="category-count">(24)</span></a>
+                            <a href="#" class="category-link">Business <span class="category-count">(19)</span></a>
+                            <a href="#" class="category-link">Health <span class="category-count">(16)</span></a>
+                            <a href="#" class="category-link">Entertainment <span class="category-count">(22)</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Widget -->
+                    <div class="widget newsletter-widget">
+                        <h3 class="widget-title">Subscribe to Newsletter</h3>
+                        <p>Get latest news updates directly in your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input">
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <!-- Ad Widget -->
+                    <div class="widget ad-widget">
+                        <div class="ad-placeholder">
+                            <span>Advertisement</span>
+                            <div class="ad-size">300 x 250</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About News Bangla</h3>
+                    <p>Your trusted source for latest news in Bengali. We provide comprehensive coverage of national, international, sports, technology, business, health, and entertainment news.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/newsbangla" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/newsbangla" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://twitter.com/newsbangla" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/newsbangla" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">National</a></li>
+                        <li><a href="#">International</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@newsbangla.com</p>
+                        <p><i class="fas fa-phone"></i> +880 1234 567890</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 News Bangla. All rights reserved. | Powered by <a href="https://blogger.com" target="_blank">Blogger</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="search-modal-close" id="searchModalClose">&times;</button>
+            <form class="search-modal-form">
+                <input type="text" placeholder="Search news..." class="search-modal-input" id="searchModalInput">
+                <button type="submit" class="search-modal-submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

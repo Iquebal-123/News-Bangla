@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নেপালে সমস্যা: মুখ্যমন্ত্রী মমতার তৎক্ষণাৎ পদক্ষেপ | সারারাত উত্তরকন্যায় পাহারা</title>
+    <meta name="description" content="নেপালে অশান্তির মধ্যে মুখ্যমন্ত্রী মমতা বন্দ্যোপাধ্যায়ের দ্রুত প্রতিক্রিয়া এবং পর্যটকদের নিরাপদে ফেরানোর উদ্যোগ সম্পর্কে বিস্তারিত খবর।">
+    <meta name="keywords" content="নেপাল, মমতা বন্দ্যোপাধ্যায়, উত্তরবঙ্গ, সীমান্ত নিরাপত্তা, পর্যটক, জেন জি আন্দোলন">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SolaimanLipi', 'Noto Sans Bengali', Arial, sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: move 20s linear infinite;
+        }
+        
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(20px, 20px); }
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 2;
+            animation: typing 3s steps(50, end);
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        .meta-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #007bff;
+        }
+        
+        .breaking-news {
+            background: linear-gradient(90deg, #ff4757, #ff3838);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #e74c3c;
+            transition: width 0.3s ease;
+        }
+        
+        h2:hover::after {
+            width: 100px;
+        }
+        
+        .content-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .content-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-quote {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            font-size: 1.2em;
+            font-style: italic;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .highlight-quote::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            font-size: 4em;
+            color: rgba(255,255,255,0.3);
+        }
+        
+        .info-box {
+            background: linear-gradient(45deg, #56ab2f, #a8e6cf);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            color: #721c24;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #f5c6cb;
+        }
+        
+        .chart-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        li {
+            background: #e3f2fd;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2196f3;
+            transition: all 0.3s ease;
+        }
+        
+        li:hover {
+            background: #bbdefb;
+            transform: translateX(10px);
+        }
+        
+        li::before {
+            content: "✓";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>নেপালে সমস্যা: মুখ্যমন্ত্রীর তৎক্ষণাৎ পদক্ষেপ</h1>
+        </div>
+        
+        <div class="breaking-news">
+            🚨 ব্রেকিং নিউজ: মমতা বন্দ্যোপাধ্যায় সারারাত উত্তরকন্যায় পাহারা দিয়েছেন
+        </div>
+        
+        <div class="meta-info">
+            <strong>📅 তারিখ:</strong> ১০ সেপ্টেম্বর, ২০২৫ | <strong>📍 স্থান:</strong> জলপাইগুড়ি, উত্তরবঙ্গ | <strong>📰 সূত্র:</strong> আনন্দবাজার পত্রিকা
+        </div>
+        
+        <div class="content-section fade-in">
+            <h2>🔥 মূল ঘটনা</h2>
+            <p>প্রতিবেশী দেশ নেপালে অস্থিরতার খবর পেয়েই দ্রুত উত্তরকন্যায় পৌঁছান পশ্চিমবঙ্গের মুখ্যমন্ত্রী <strong>মমতা বন্দ্যোপাধ্যায়</strong>। বুধবার জলপাইগুড়ি থেকে তিনি জানান যে, নেপালে আটকে পড়া বাঙালি পর্যটকদের নিরাপদে ফিরিয়ে আনতে রাজ্য সরকার সব ধরনের উদ্যোগ নিয়েছে।</p>
+        </div>
+        
+        <div class="highlight-quote">
+            যেই শুনেছি নেপালে প্রবলেম, ছুটে এসেছি। আমি গতকাল সারা রাত উত্তরকন্যায় বসে পাহারা দিয়েছি। আপনারা নিশ্চিন্তে ঘুমোতে পারেন, আমরা দেখে নিতে পারি। - মমতা বন্দ্যোপাধ্যায়
+        </div>
+        
+        <div class="content-section fade-in">
+            <h2>🛡️ নিরাপত্তা ব্যবস্থা</h2>
+            <p>মুখ্যমন্ত্রী উত্তরবঙ্গ পৌঁছানোর সাথে সাথেই পুলিশ কর্তাদের সঙ্গে জরুরি বৈঠক করেন। সীমান্ত নিরাপত্তা জোরদার করতে বেশ কয়েকটি গুরুত্বপূর্ণ পদক্ষেপ নেওয়া হয়েছে:</p>
+            
+            <ul>
+                <li><strong>এসএসবি আধিকারিকদের সঙ্গে উচ্চপর্যায়ের বৈঠক</strong> - সীমান্ত নিরাপত্তা নিয়ে বিশেষ আলোচনা</li>
+                <li><strong>৪১ নম্বর ব্যাটালিয়ন কমান্ডান্ট যোগেশকুমার সিংহের সাথে সমন্বয়</strong> - ইন্দো-নেপাল সীমান্তে বিশেষ নজরদারি</li>
+                <li><strong>উত্তরবঙ্গ আইজি রাজেশকুমার যাদব ও দার্জিলিং পুলিশ সুপার প্রবীণ প্রকাশের নেতৃত্বে</strong> বিশেষ টিম গঠন</li>
+                <li><strong>সীমান্তবর্তী সকল থানায় সতর্ক নির্দেশ</strong> জারি করা হয়েছে</li>
+            </ul>
+        </div>
+        
+        <div class="chart-container">
+            <h2>📊 নিরাপত্তা ব্যবস্থার বিবরণ</h2>
+            <canvas id="securityChart" width="400" height="200"></canvas>
+        </div>
+        
+        <div class="info-box">
+            <h2>✅ পর্যটকদের জন্য সুখবর</h2>
+            <p><strong>মুখ্যমন্ত্রী নিশ্চয়তা দিয়েছেন:</strong></p>
+            <ul style="list-style: none; padding: 0;">
+                <li>🕐 দু'-এক দিনের মধ্যে সবাইকে ফিরিয়ে আনা হবে</li>
+                <li>🏛️ রাজ্য সরকার বিষয়টি 'টেক আপ' করেছে</li>
+                <li>📞 দার্জিলিং জেলা পুলিশের হেল্পলাইনে সহায়তা পাওয়া যাবে</li>
+                <li>🤝 নেপাল পুলিশের সাথে ক্রমাগত যোগাযোগ রক্ষা করা হচ্ছে</li>
+            </ul>
+        </div>
+        
+        <div class="warning-box">
+            <h2>⚠️ গুরুত্বপূর্ণ সতর্কতা</h2>
+            <p><strong>মুখ্যমন্ত্রীর বিশেষ নির্দেশ:</strong></p>
+            <p>"এখনই তাড়াহুড়ো করতে গিয়ে কোনও বিপদের মুখে পড়বেন না। চিন্তা করবেন না। একটু শান্তি ফেরাতে দিন। ওরা শান্তি ফেরাক, আমরা প্রতিবেশী দেশ, খুশি হব।"</p>
+        </div>
+        
+        <div class="content-section fade-in">
+            <h2>🏔️ নেপালের 'জেন জি' আন্দোলন</h2>
+            <p>নেপালে চলমান <strong>'জেন জি' আন্দোলন</strong> চরম আকার নিয়েছে। এই পরিস্থিতিতে উত্তরবঙ্গ থেকে নেপালের দূরত্ব কম হওয়ায় রাজ্য প্রশাসন বিশেষভাবে সতর্ক হয়েছে। পানিট্যাঙ্কিতে সতর্কবার্তা পাঠানো হয়েছে এবং সীমান্তে নাকা চেকিং জোরদার করা হয়েছে।</p>
+        </div>
+        
+        <div class="content-section fade-in">
+            <h2>📱 জরুরি যোগাযোগ</h2>
+            <p>নেপালে কোনো ভারতীয় নাগরিক সমস্যায় পড়লে <strong>দার্জিলিং জেলা পুলিশের হেল্পলাইনে</strong> ফোন করে সাহায্য পাওয়া যাবে। রাজ্য প্রশাসন ও এসএসবি উভয়ই এই বিষয়ে সতর্ক অবস্থায় রয়েছে।</p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>সর্বশেষ আপডেট:</strong> ১০ সেপ্টেম্বর, ২০২৫ | <strong>প্রতিবেদক:</strong> আনন্দবাজার সংবাদদাতা</p>
+            <p>প্রতিবেশী দেশের শান্তি ও নিরাপত্তার জন্য আমাদের প্রার্থনা রইল। 🙏</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Smooth scroll animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeIn 1s ease-in forwards';
+                    }
+                });
+            });
+            
+            elements.forEach(el => observer.observe(el));
+        });
+        
+        // Chart for security measures
+        const ctx = document.getElementById('securityChart').getContext('2d');
+        const securityChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['পুলিশ বাহিনী', 'এসএসবি', 'স্থানীয় প্রশাসন', 'সীমান্ত নিরাপত্তা', 'হেল্পলাইন সেবা'],
+                datasets: [{
+                    label: 'নিরাপত্তা ব্যবস্থা',
+                    data: [25, 25, 20, 20, 10],
+                    backgroundColor: [
+                        '#FF6384',
+                        '#36A2EB',
+                        '#FFCE56',
+                        '#4BC0C0',
+                        '#9966FF'
+                    ],
+                    borderWidth: 3,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                size: 14,
+                                family: 'SolaimanLipi'
+                            }
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'নিরাপত্তা ব্যবস্থার বিতরণ',
+                        font: {
+                            size: 16,
+                            family: 'SolaimanLipi'
+                        }
+                    }
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true,
+                    duration: 2000
+                }
+            }
+        });
+        
+        // Typing effect for title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+        
+        // Smooth hover effects
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'all 0.3s ease';
+            });
+            
+            section.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
